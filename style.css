@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+
+    background: linear-gradient(
+        135deg,
+        #00c6ff,
+        #0072ff
+    );
+
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.bear {
+    font-size: 100px;
+    margin-bottom: 30px;
+
+    animation: bounce 1.5s infinite;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+button {
+    border: none;
+
+    padding: 14px 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#yesBtn {
+    background: #008cff;
+    color: white;
+}
+
+#noBtn {
+    background: #008cff;
+    color: white;
+
+    position: relative;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#message {
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
